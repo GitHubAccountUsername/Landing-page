@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "saudi-regular", "saudi-medium", "saudi-bold";
+}
+
+    @media (max-width: 768px) {
+      /* Styles for screens smaller than 768px */
+      body {
+        font-size: 14px;
+      }
+    }
+
+body {
+    background: linear-gradient(135deg, #F6F6F4, #EAEAE6);
+    
+    
+}
+
+
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+header .hamburger-menu {
+    background-color: transparent !important; /* Force transparent background */
+    border: 2px solid #bfa046 !important; /* Gold border */
+    color: #bfa046 !important; /* Gold icon color */
+    font-weight: bold;
+    text-shadow: 
+        2px 2px 3px white,
+        -2px -2px 3px white,
+        2px -2px 3px white,
+        -2px 2px 3px white; /* White shadow */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Targeting the icon separately if needed */
+header .hamburger-menu i {
+    color: #bfa046 !important; /* Gold color for the icon */
+    text-shadow: 
+        2px 2px 3px white,
+        -2px -2px 3px white,
+        2px -2px 3px white,
+        -2px 2px 3px white; /* White outline for the icon */
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: #bfa046; /* Gold text color */
+    text-shadow: 
+    2px 2px 3px white, /* White outline (horizontal, vertical, blur, color) */
+    -2px -2px 3px white,
+    2px -2px 3px white,
+    -2px 2px 3px white; /* Multiple shadows for a defined outline */
+    text-decoration: none;
+    transition: .10s;
+}
+
+.logo:hover {
+    color: grey;
+}
+
+.hamburger-menu {
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.menu li a:hover {
+    color:#000000;
+    
+
+
+}
+.home_wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero {
+    text-shadow: 
+    2px 2px 3px rgba(191, 160, 70, 0.8),
+    -2px -2px 3px rgba(191, 160, 70, 0.8),
+    2px -2px 3px rgba(191, 160, 70, 0.8),
+    -2px 2px 3px rgba(191, 160, 70, 0.8); 
+}
+
+.video_ab {
+    position: absolute;
+    top: 0;
+    right:0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.home_wrapper h2 {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.features-container {
+    display: flex;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container button {
+    margin: 1rem;
+}
